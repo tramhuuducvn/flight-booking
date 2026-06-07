@@ -1,12 +1,12 @@
-package com.ductram.learningspring;
+package com.ductram.flight.booking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LearningSpringApplication {
+public class FlightBookingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LearningSpringApplication.class, args);
+        SpringApplication.run(FlightBookingApplication.class, args);
     }
 }

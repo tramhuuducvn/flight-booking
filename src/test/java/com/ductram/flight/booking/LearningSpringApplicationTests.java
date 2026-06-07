@@ -1,4 +1,4 @@
-package com.ductram.learningspring;
+package com.ductram.flight.booking;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
