@@ -1,29 +1,16 @@
 spring:
-  profiles:
-    active: reactive
-  application:
-    appName: ${APP_NAME:learning-spring}
-    author: ${AUTHOR:Tram Huu Duc}
-    old: ${OLD:22}
-  threads:
-    virtual:
-      enabled: true
-server:
-  port: 8081
----
-spring:
-  config:
-    activate:
-      on-profile: servlet
-  main:
-    web-application-type: servlet
----
-spring:
-  config:
-    activate:
-      on-profile: reactive
-  main:
-    web-application-type: reactive
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
 
 
 
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/${DATABASE}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver

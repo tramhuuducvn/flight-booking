@@ -1,0 +1,8 @@
+package com.ductram.flight.booking.repository;
+
+import com.ductram.flight.booking.entity.FlightEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface FlightRepository extends JpaRepository<FlightEntity, Integer> {}
